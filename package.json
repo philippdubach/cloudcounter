@@ -1,0 +1,45 @@
+{
+  "name": "cloudcounter",
+  "version": "1.0.0",
+  "description": "Privacy-focused web analytics running on Cloudflare Pages + D1. A serverless port of GoatCounter.",
+  "license": "EUPL-1.2",
+  "author": "Philipp D. Dubach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philippdubach/cloudcounter.git"
+  },
+  "homepage": "https://github.com/philippdubach/cloudcounter#readme",
+  "bugs": {
+    "url": "https://github.com/philippdubach/cloudcounter/issues"
+  },
+  "keywords": [
+    "analytics",
+    "cloudflare",
+    "cloudflare-pages",
+    "cloudflare-d1",
+    "privacy",
+    "goatcounter",
+    "serverless",
+    "web-analytics",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "wrangler pages dev public --d1=DB=cloudcounter --kv=SESSIONS",
+    "deploy": "wrangler pages deploy public",
+    "db:create": "wrangler d1 create cloudcounter",
+    "db:migrate": "wrangler d1 execute cloudcounter --file=./migrations/0001_init.sql",
+    "db:migrate:local": "wrangler d1 execute cloudcounter --file=./migrations/0001_init.sql --local",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.24.0"
+  }
+}

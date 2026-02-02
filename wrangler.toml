@@ -1,0 +1,25 @@
+name = "cloudcounter"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "public"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "cloudcounter"
+database_id = "YOUR_DATABASE_ID_HERE"
+
+# KV for session storage
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "YOUR_KV_NAMESPACE_ID_HERE"
+
+# Environment variables
+[vars]
+SITE_NAME = "My Analytics"
+DATA_RETENTION_DAYS = "0"  # 0 = unlimited
+
+# Note: Cron triggers require a separate Worker project
+# For cleanup, create a separate worker or run manually via dashboard
+# Secrets (set via: wrangler secret put DASHBOARD_PASSWORD)
+# DASHBOARD_PASSWORD - password for dashboard access
