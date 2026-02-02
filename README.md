@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/cc_banner.png" alt="CloudCounter" width="600">
+  <img src="media/cc_banner.jpg" alt="CloudCounter" width="600">
 </p>
 
 <p align="center">
