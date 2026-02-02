@@ -1,10 +1,19 @@
 <p align="center">
-  <img src="media/cc_banner.jpg" alt="CloudCounter" width="600">
+  <img src="media/cc_banner.jpg" alt="CloudCounter">
 </p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/EUPL-1.2">
     <img src="https://img.shields.io/badge/License-EUPL-blue.svg" alt="License: EUPL">
+  </a>
+  <a href="https://pages.cloudflare.com/">
+    <img src="https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white" alt="Cloudflare Pages">
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white" alt="Node.js 18+">
   </a>
 </p>
 
