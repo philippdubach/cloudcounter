@@ -23,3 +23,6 @@ DATA_RETENTION_DAYS = "0"  # 0 = unlimited
 # For cleanup, create a separate worker or run manually via dashboard
 # Secrets (set via: wrangler secret put DASHBOARD_PASSWORD)
 # DASHBOARD_PASSWORD - password for dashboard access
+
+[secrets]
+required = [ "DASHBOARD_PASSWORD" ]
