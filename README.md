@@ -87,7 +87,7 @@ id = "YOUR_KV_NAMESPACE_ID_HERE"
 ### 4. Initialize database
 
 ```bash
-wrangler d1 execute cloudcounter --file=./migrations/0001_init.sql
+wrangler d1 execute cloudcounter --file=./migrations/0001_init.sql --remote
 ```
 
 ### 5. Set dashboard password
