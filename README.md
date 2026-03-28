@@ -93,7 +93,7 @@ wrangler d1 execute cloudcounter --file=./migrations/0001_init.sql
 ### 5. Set dashboard password
 
 ```bash
-wrangler secret put DASHBOARD_PASSWORD
+wrangler pages secret put DASHBOARD_PASSWORD
 ```
 
 ### 6. Deploy
